@@ -3,55 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css" />
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <label for=""></label>
-        <input id="amountOfScoops" type="number" min="1" max="4">
-        <input type="radio" name="Choose" id="coneButton" onclick="displayToppings()" checked>
-        <label for="cone">Cone</label>
-        <input type="radio" name="Choose" id="cupButton" onclick="displayToppings()">
-        <label for="Cup">Cup</label>
-    </div>
+
+    <main>
+        <div>
+            <label for=""></label>
+            <input id="amountOfScoops" type="number" min="1" max="4">
+            <input type="radio" name="Choose" id="coneButton" onclick="displayToppings()" checked>
+            <label for="cone">Cone</label>
+            <input type="radio" name="Choose" id="cupButton" onclick="displayToppings()">
+            <label for="Cup">Cup</label>
+        </div>
+       
+        <fieldset id="toppingSelector">
+            <legend>Toppings</legend>
+    
+            <label for="">Sprinkles($.50)
+                <input type="checkbox" name="" id="sprinklesButton">
+            </label>
+            <label for="creamButton">
+                Whipped Cream($0.25)
+                <input type="checkbox" name="" id="creamButton">
+            </label>
+            
+            <label for="fudgeButton">
+                Hot Fudge($1.25)
+                <input type="checkbox" name="" id="fudgeButton">
+            </label>
+            
+            <label for="cherryButton">
+                Cherry($0.25)
+                <input type="checkbox" name="" id="cherryButton">
+            </label>
+          
+        </fieldset>
+    
+        <button id="" onclick="calculate()">Submit Order</button>
+    
+        <div id="displayAmounts">
+            <label for="">Base Price</label>
+            <input readonly type="number" id="basePriceField">
+            <label for="">Tax</label>
+            <input readonly type="number" name="" id="taxField">
+            <label for="">Total Due</label>
+            <input readonly type="number" name="" id="totalAmountField">
+        </div>
+        <label id="displayCheckLabel" for="displayCheck">Hide</label>
+        <input id="displayCheck" type="checkbox" onclick="displayAmount()">
+    </main>
    
-    <fieldset id="toppingSelector">
-        <legend>Toppings</legend>
-
-        <label for="">Sprinkles($.50)
-            <input type="checkbox" name="" id="sprinklesButton">
-        </label>
-        <label for="creamButton">
-            Whipped Cream($0.25)
-            <input type="checkbox" name="" id="creamButton">
-        </label>
-        
-        <label for="fudgeButton">
-            Hot Fudge($1.25)
-            <input type="checkbox" name="" id="fudgeButton">
-        </label>
-        
-        <label for="cherryButton">
-            Cherry($0.25)
-            <input type="checkbox" name="" id="cherryButton">
-        </label>
-      
-    </fieldset>
-
-    <button id="" onclick="calculate()">Submit Order</button>
-
-    <div id="displayAmounts">
-        <label for="">Base Price</label>
-        <input readonly type="number" id="basePriceField">
-        <label for="">Tax</label>
-        <input readonly type="number" name="" id="taxField">
-        <label for="">Total Due</label>
-        <input readonly type="number" name="" id="totalAmountField">
-    </div>
-    <label id="displayCheckLabel" for="displayCheck">Hide</label>
-    <input id="displayCheck" type="checkbox" onclick="displayAmount()">
 </body>
 </html>
