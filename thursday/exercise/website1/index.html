@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+    <script defer src="scripts/main.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <head>
+      <nav>
+        <ul id="links">
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+        </ul>
+      </nav>
+    </head>
+    <div id="display"></div>
+
+    <p id="paragraph1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis qui, corrupti commodi perferendis illo,
+      inventore aliquid harum officia fugit omnis adipisci debitis labore accusantium corporis sed suscipit excepturi
+      rem. Alias!
+    </p>
+
+    <input type="text" id="nameValue">
+    <button id="push" onclick="clickMe()">Click</button>
+
+    <input type="radio" name="selector" id="radio1">
+    <label for="radio1">Month</label>
+    <input type="radio" name="selector" id="radio2">
+    <label for="radio2">Day</label>
+
+    <!-- radio button group -->
+     <fieldset>
+        <legend>What do you want?</legend>
+        <input type="checkbox" name="protein?" id="bowlRadio">
+        <label for="bowlCheckBox">Chicken?</label>
+    
+        <input type="checkbox" name="protein?" id="burritoRadio">
+        <label for="burritoCheckBox">Steak?</label>
+    
+        <input type="checkbox" name="protein?" id="tacosRadio">
+        <label for="tacosCheckBox">Shrimp?</label>
+     </fieldset>
+
+     <fieldset>
+        <legend>Select your protein?</legend>
+        <input type="radio" name="bowlOrBurrito" id="bowlRadio">
+        <label for="bowlCheckBox">Bowl?</label>
+    
+        <input type="radio" name="bowlOrBurrito" id="burritoRadio">
+        <label for="burritoCheckBox">Burrito?</label>
+    
+        <input type="radio" name="bowlOrBurrito" id="tacosRadio">
+        <label for="tacosCheckBox">Taco?</label>
+     </fieldset>
+
+     <input readonly type="text" name="" id="amountOfMoney" placeholder="$0.00">
+    <button id="placeOrderButton" onclick="placeOrder()">Place Order</button>
+  </body>
+</html>

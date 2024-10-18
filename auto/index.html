@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>ACME Car Rentals</h1>
+
+    <fieldset>
+      <label for="date">Pickup date</label>
+      <input type="date" id="date" />
+      <label for="numberOfDays">Number of Days</label>
+      <input type="number" id="numberOfDaysInput" />
+    </fieldset>
+
+    <fieldset>
+      <input type="checkbox" id="tollButton" />
+      <label for="">Electronic Toll Tag($3.95/day)</label>
+
+      <input type="checkbox" id="gpsButton" />
+      <label for="">GPS($2.95/day)</label>
+
+      <input type="checkbox" id="roadsideButton" />
+      <label for="">Roadside Assistance($2.95/day)</label>
+
+      <h3>Under 25</h3>
+      <input type="radio" name="select" id="selectNo" />
+      <label for="selectNo">No</label>
+      <input type="radio" name="select" id="25selectYes" />
+      <label for="selectYes">Yes</label>
+    </fieldset>
+
+    <!-- 
+<button onclick="estimateCost()">Estimate the Cost</button> -->
+
+    <div id="estimation">
+      <label for="basepay">Car Rental</label>
+      <input readonly type="number" id="basepay" />
+      <!-- <label for="basepay">Car Rental</label> -->
+      <label for="basepay">Options</label>
+      <input readonly type="number" id="options" />
+
+      <label for="under25Surcharge">Under 25 Surcharge</label>
+      <input readonly type="number" id="under25Surcharge" />
+      <!-- <label for="under25Surcharge">Under 25 Surcharge</label>
+  <input readonly type="number" name="" id="total-char"> -->
+      <label for="total-charge">Total Due</label>
+      <input readonly type="number" name="total-charge" id="amountDue" />
+    </div>
+
+    <div>
+      <button onclick="estimateCost()">Estimate the Cost</button>
+      <input type="checkbox" name="" id="displayChange" onclick="displayChange()" />
+      <label for="" id="hide/show">Hide</label>
+    </div>
+  </body>
+</html>

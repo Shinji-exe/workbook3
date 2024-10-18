@@ -3,7 +3,7 @@ let first = "timothy";
 //
 
 function printName(){
-    //function scope for variables inside a function also known as local scope
+    //function scope for variables inside a function also known as local scope has to be inside the function
     let first = "DeLeon";
     //
     console.log(first)

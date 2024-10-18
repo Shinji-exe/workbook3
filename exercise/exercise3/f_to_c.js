@@ -30,9 +30,26 @@ function getNumGrandKids2(name){
     if (name == "Dana"){
         num = 4
     }else if (name == "Kayla"){
-num =0
+   num =2
+    } else if(name == "Sarah"){
+        num= 1
+    }else{
+        num = 0
     }
+
+    return num
 }
+
+console.log(getNumGrandKids2("Sarah"))
+
+function multiply(num1,num2){
+let multiply = num1*num2;
+
+return multiply;
+}
+
+let totalEquals = multiply(4,3)
+console.log(totalEquals)
 
 
 /////////////////////////////Exercise Section\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
