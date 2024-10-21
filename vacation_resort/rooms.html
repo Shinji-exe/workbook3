@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css" />
+    <script defer src="./scripts/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./images/logoipsum-239.svg" alt="">
+            <ul>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="carrentals.html">Auto Rentals</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+           
+        </nav>
+    </header>
+
+    <main>
+
+        <fieldset>
+            <label for="">Full Name</label>
+            <input type="text" name="" id="fullName">
+            <label for="">Email Address</label>
+            <input type="email" name="" id="email">
+            <label for="">Reservation Date</label>
+            <input type="date" name="" id="dateTime">
+            <label for="">Stay Duration</label>
+            <input type="number" name="" id="numberOfNights" min="1" max="28">
+
+            
+            <input type="radio" name="roomSelector" id="queen">
+            <label for="">Queen</label>
+            <input type="radio" name="roomSelector" id="king">
+            <label for="">King</label>
+            <input type="radio" name="roomSelector" id="2-bedroom">
+            <label for="">Two Bedroom Suite</label>
+<br>
+            <label for="">Number of Adults</label>
+            <input type="number" name="" id="numberOfAdults" min="1" max="4">
+            <label for="">Number of Children</label>
+            <input type="number" name="" id="numberOfChildren" min="0" max="4">
+
+            <br>
+
+            <input type="radio" name="discountSelector" id="none">
+            <label for="">None</label>
+            <input type="radio" name="discountSelector" id="senior">
+            <label for="">Senior(10%)</label>
+            <input type="radio" name="discountSelector" id="military">
+            <label for="">Military(20%)</label>
+
+            <input type="number" id="totalCost">
+
+            <button onclick="calculateCost()">Calculate</button>
+        </fieldset>
+            
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
