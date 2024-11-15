@@ -23,7 +23,7 @@ let theFirst = firstname.substring(5,12)
 console.log(theFirst)
 console.log(positionOfFullName)
 
-let reverse = firstname.split("").reverse().join("");
+let reverse = firstname.split(" ").reverse().join("");
 
 console.log(reverse)
 

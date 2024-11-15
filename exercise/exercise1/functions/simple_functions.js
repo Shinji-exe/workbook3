@@ -19,3 +19,31 @@ function favoritePlace(){
 }
 
 favoritePlace()
+
+console.log(Boolean(0));
+
+let numbers = [1, 2, 3, 4];
+let result = numbers.reduce((acc, curr) => acc + curr, 0);
+console.log(result);
+
+let i = 0;
+while (i < 3) {
+  console.log(i);
+  i++;
+}
+
+let sum = 0;
+for (let i = 0; i < 5; i++) {
+  if (i === 3) {
+    break;
+  }
+  sum += i;
+}
+console.log(sum);
+
+
+let x = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 3);

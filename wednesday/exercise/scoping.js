@@ -4,11 +4,11 @@ let first = "timothy";
 
 function printName(){
     //function scope for variables inside a function also known as local scope has to be inside the function
-    let first = "DeLeon";
+    let first = "DeLeon"; //Function Scope
     //
     console.log(first)
 //block scope like if/else, for,while loops
-    if(true){
+    if(true){ //Block Scope
         let first = "Ricardo"
     }
     //
@@ -58,34 +58,34 @@ console.log("d = " + d)
 
 let b = 4; //Global
  function test4(){
-    let b = 7;// function 
+    let b = 7;// function level declaring a b variable here which is different from the b from global level  
     console.log("b = " + b)//7
  }
 
  test4()//7
- console.log("b = " + b)//4
+ console.log("b = " + b)//4 calling the global level b variable
 
- let c = 4;//G level
+ let c = 4;//Global level
  function test5(){
-    c = 7;// F level
+    c = 7;// Function level
     function again(){
-        let c = 8;
-        console.log("c = " + c)
+        let c = 8; //Funtion level 2
+        console.log("c = " + c) //8
     }
     again()//8
     console.log("c = " + c)//7
  }
 
- test5()
- console.log("c = " + c)
+ test5()//7
+ console.log("c = " + c)//4
 
- let a = 4;
+ let a = 4; //Global Level
  function test6(){
-    let a = 7;
+    let a = 7; //Function Level
     function again(){
-        let a = 8;
-        console.log("a = " + a)
+        let a = 8; //Function Level
+        console.log("a = " + a) //8
     }
-    again()
+    again()//8
     console.log("a = " + a)
  }
